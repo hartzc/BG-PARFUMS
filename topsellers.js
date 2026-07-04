@@ -1,11 +1,11 @@
 
 
 const produtostopsellers = [
-    { nome: "Cebolinha", imagem: "assets/masculinos/Cebola.webp" },
-    { nome: "Le Male Elixir", imagem: "assets/decants/Le Male Elixir.jpg" },
-    { nome: "Ultra Male", imagem: "assets/decants/Ultra Male.webp" },
-    { nome: "La Vie Est Belle", imagem: "assets/decants/La Vie Est Belle.webp" },
-    { nome: "Club de Nuit", imagem: "assets/decants/Club de Nuit.jfif" },
+    { nome: "Cebolinha", imagem: "assets/masculinos/Cebola.jpg" },
+    { nome: "Le Male Elixir", imagem: "assets/decants/Le_Male_Elixir.jpg" },
+    { nome: "Ultra Male", imagem: "assets/decants/Ultra_Male.webp" },
+    { nome: "La Vie Est Belle", imagem: "assets/decants/La_Vie_Est_Belle.webp" },
+    { nome: "Club de Nuit", imagem: "assets/decants/Club_de_Nuit.jfif" },
 ];
 
 function montarCardsProdutos() {

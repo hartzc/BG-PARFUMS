@@ -1,13 +1,13 @@
 
 
 const produtosImportados = [
-    { nome: "La Vie Est Belle", imagem: "assets/importados/La Vie Est Belle.webp" },
-    { nome: "Ultra Male", imagem: "assets/importados/Ultra Male.webp" },
-    { nome: "Le Male Elixir", imagem: "assets/importados/Le Male Elixir.jpg" },
-    { nome: "Le Beau Le Parfum", imagem: "assets/importados/Le Beau Le Parfum.jfif" },
-    { nome: "212 VIP Black", imagem: "assets/importados/212 VIP Black.webp" },
-    { nome: "212 Elixir", imagem: "assets/importados/212 Elixir.webp" },
-    { nome: "212 VIP Rosé", imagem: "assets/importados/212 VIP Rosé.jpg" },
+    { nome: "La Vie Est Belle", imagem: "assets/importados/La_Vie_Est_Belle.webp" },
+    { nome: "Ultra Male", imagem: "assets/importados/Ultra_Male.webp" },
+    { nome: "Le Male Elixir", imagem: "assets/importados/Le_Male_Elixir.jpg" },
+    { nome: "Le Beau Le Parfum", imagem: "assets/importados/Le_Beau_Le_Parfum.jpg" },
+    { nome: "212 VIP Black", imagem: "assets/importados/212_VIP_Black.webp" },
+    { nome: "212 Elixir", imagem: "assets/importados/212_Elixir.webp" },
+    { nome: "212 VIP Rosé", imagem: "assets/importados/212_VIP_Rosé.jpg" },
 
 ];
 
