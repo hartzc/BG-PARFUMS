@@ -1,7 +1,7 @@
 
 
 const produtosMasculinos = [
-    { nome: "Salvo", imagem: "assets/masculinos/salvo.jfif" },
+    { nome: "Salvo", imagem: "assets/masculinos/Salvo.jfif" },
     { nome: "Opulent Dubai", imagem: "assets/masculinos/Opulent_Dubai.jpg" },
     { nome: "Habik", imagem: "assets/masculinos/Habik.webp" },
     { nome: "Alpine Homme Sport", imagem: "assets/masculinos/Alpine_Homme_Sport.jpg" },
