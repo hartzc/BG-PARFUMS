@@ -39,6 +39,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const inputBusca = document.querySelector('.search-container input');
+const btnLimpar = document.querySelector('.btn-limpar-busca'); // O ícone de 'X' ou limpar
+
+// PRA LIMPAR AS BUSCAS QUANDO CLICA EM X
+if (btnLimpar) {
+    btnLimpar.addEventListener('click', function() {
+        
+        inputBusca.value = '';
+        btnLimpar.classList.remove('visivel');
+
+        const todosOsCards = document.querySelectorAll('.produto-card');
+
+        todosOsCards.forEach(card => {
+            card.classList.remove('produto-escondido');
+        });
+
+        inputBusca.focus();
+    });
+}
   
   let dropdown = null;
 

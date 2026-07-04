@@ -19,6 +19,14 @@ html, body {
     transition: height 0.3s ease; 
 }
 
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 35px; 
+    text-decoration: none; 
+    color: inherit; 
+}
+
 h1 {
     font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;

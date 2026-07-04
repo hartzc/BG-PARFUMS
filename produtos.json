@@ -24,6 +24,13 @@
   { "nome": "Qaed Al Fursan Unlimited", "categoria": "masculino", "pagina": "masculinos.html" },
   { "nome": "Rayhaan", "categoria": "masculino", "pagina": "masculinos.html" },
   { "nome": "Elixir Eqaab", "categoria": "masculino", "pagina": "masculinos.html" },
+  { "nome": "Cebolinha", "categoria": "masculino", "pagina": "masculinos.html" },
+
+  { "nome": "Le Male Elixir", "categoria": "masculino/importados", "pagina": "importados.html" },
+  { "nome": "Le Beau Le Parfum", "categoria": "masculino/importados", "pagina": "importados.html" },
+  { "nome": "Ultra Male", "categoria": "masculino/importados", "pagina": "importados.html" },
+  { "nome": "212 VIP Black", "categoria": "masculino/importados", "pagina": "importados.html" },
+  { "nome": "212 Elixir", "categoria": "masculino/importados", "pagina": "importados.html" },
 
   { "nome": "Bade Al Oud", "categoria": "feminino", "pagina": "femininos.html" },
   { "nome": "Honor & Glory", "categoria": "feminino", "pagina": "femininos.html" },
@@ -40,5 +47,10 @@
   { "nome": "Yara", "categoria": "feminino", "pagina": "femininos.html" },
   { "nome": "Yara Candy", "categoria": "feminino", "pagina": "femininos.html" },
   { "nome": "Yara Elixir", "categoria": "feminino", "pagina": "femininos.html" },
-  { "nome": "Marshmallow Blush", "categoria": "feminino", "pagina": "femininos.html" }
+  { "nome": "Marshmallow Blush", "categoria": "feminino", "pagina": "femininos.html" },
+
+  { "nome": "La Vie Est Belle", "categoria": "feminino/importados", "pagina": "importados.html" },
+  { "nome": "212 VIP Rosé", "categoria": "feminino/importados", "pagina": "importados.html" }
+  
+
 ]
