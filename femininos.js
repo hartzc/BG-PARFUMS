@@ -16,7 +16,7 @@ const produtosFemininos = [
     { nome: "Yara", imagem: "assets/yara.jpg" },
     { nome: "Yara Candy", imagem: "assets/yaracandy.webp" },
     { nome: "Yara Elixir", imagem: "assets/yara1.jpg" },
-    { nome: "Marshmallow Blush", imagem: "assets/marshmallow.jpg" },
+    { nome: "Marshmallow Blush", imagem: "assets/marshmallow.jpg" }
 ];
 
 function montarCardsProdutos() {
