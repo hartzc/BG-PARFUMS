@@ -1,12 +1,12 @@
 
 
 const produtosMasculinos = [
-    { nome: "Salvo", imagem: "assets/masculinos/salvo.jfif" },
-    { nome: "Opulent Dubai", imagem: "assets/masculinos/Opulent_Dubai.jpg" },
-    { nome: "Habik", imagem: "assets/masculinos/Habik.webp" },
-    { nome: "Alpine Homme Sport", imagem: "assets/masculinos/Alpine_Homme_Sport.jpg" },
-    { nome: "Fakhar Black", imagem: "assets/masculinos/Fakhar_Black.webp" },
-    { nome: "Fakhar Platinum", imagem: "assets/masculinos/Fakhar_Platinum.jfif" },
+    { nome: "Salvo", imagem: "assets/salvo.jfif" },
+    { nome: "Opulent Dubai", imagem: "assets//Opulent_Dubai.jpg" },
+    { nome: "Habik", imagem: "assets/Habik.webp" },
+    { nome: "Alpine Homme Sport", imagem: "assets/Alpine_Homme_Sport.jpg" },
+    { nome: "Fakhar Black", imagem: "assetsFakhar_Black.webp" },
+    { nome: "Fakhar Platinum", imagem: "assets/Fakhar_Platinum.jfif" },
     { nome: "Club 6", imagem: "assets/masculinos/Club_6.webp" },
     { nome: "Voyage", imagem: "assets/masculinos/Voyage.jpg" },
     { nome: "Ameerati", imagem: "assets/masculinos/Ameerati.jpg" },
