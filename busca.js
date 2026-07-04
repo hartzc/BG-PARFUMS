@@ -45,19 +45,27 @@ const btnLimpar = document.querySelector('.btn-limpar-busca'); // O ícone de 'X
 // PRA LIMPAR AS BUSCAS QUANDO CLICA EM X
 if (btnLimpar) {
     btnLimpar.addEventListener('click', function() {
-        
-        inputBusca.value = '';
+        // Limpa o input e esconde o botão X
+        searchInput.value = '';
         btnLimpar.classList.remove('visivel');
 
-        const todosOsCards = document.querySelectorAll('.produto-card');
+        // Volta os produtos na tela (se estiver em uma página de produtos)
+        if (grid) {
+            const todosOsCards = document.querySelectorAll('.produto-card');
+            todosOsCards.forEach(card => {
+                card.classList.remove('produto-escondido');
+            });
+        }
+        
+        // ---> CÓDIGO NOVO PARA ESCONDER A LISTA DE NOMES <---
+        if (dropdown) {
+            dropdown.classList.remove('visivel');
+            dropdown.innerHTML = '';
+        }
 
-        todosOsCards.forEach(card => {
-            card.classList.remove('produto-escondido');
-        });
-
-        inputBusca.focus();
+        searchInput.focus();
     });
-}
+  }
   
   let dropdown = null;
 
