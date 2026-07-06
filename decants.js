@@ -25,7 +25,7 @@ const produtosDecants = [
     { nome: "Yara Elixir", imagem: "assets/decants/yara1.jpg" },
     { nome: "Marshmallow Blush", imagem: "assets/decants/marshmallow.jpg" },
 
-    { nome: "Salvo", imagem: "assets/decants/salvo.jpg" },
+    { nome: "Salvo", imagem: "assets/decants/Salvo.jpg" },
     { nome: "Opulent Dubai", imagem: "assets/decants/Opulent_Dubai.jpg" },
     { nome: "Habik", imagem: "assets/decants/Habik.webp" },
     { nome: "Alpine Homme Sport", imagem: "assets/decants/Alpine_Homme_Sport.jpg" },
