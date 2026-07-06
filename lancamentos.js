@@ -6,7 +6,7 @@ const produtosLancamentos = [
     { nome: "Liquid Brun", imagem: "assets/decants/Liquid_Brun.jpg" },
     { nome: "His Confession", imagem: "assets/decants/His_Confession.jpg" },
     { nome: "Habik", imagem: "assets/decants/Habik.webp" },
-    { nome: "Club 6", imagem: "assets/decants/Club_6.webp" },
+    { nome: "Club 6 Voyage", imagem: "assets/masculinos/Club_6.webp" },
 
 ];
 

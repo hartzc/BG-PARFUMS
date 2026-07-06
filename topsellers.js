@@ -5,7 +5,7 @@ const produtostopsellers = [
     { nome: "Le Male Elixir", imagem: "assets/decants/Le_Male_Elixir.jpg" },
     { nome: "Ultra Male", imagem: "assets/decants/Ultra_Male.webp" },
     { nome: "La Vie Est Belle", imagem: "assets/decants/La_Vie_Est_Belle.webp" },
-    { nome: "Club de Nuit", imagem: "assets/decants/Club_de_Nuit.jfif" },
+    { nome: "Club de Nuit", imagem: "assets/masculinos/Club_de_Nuit.jpg" },
 ];
 
 function montarCardsProdutos() {
