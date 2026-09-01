@@ -1,5 +1,5 @@
 html, body {
-    background-color: #F0F0F0;
+    background-color: white;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -275,12 +275,18 @@ h1 {
     flex-shrink: 0;
 }
 
+.categoria-card:hover .imagem-container {
+    box-shadow: 0 12px 26px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+}
+
 .imagem-container {
     width: 100%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     margin-bottom: 15px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .imagem-container img {
@@ -288,6 +294,11 @@ h1 {
     height: 100%;
     object-fit: contain;
     mix-blend-mode: multiply;
+    transition: transform 0.5s ease;
+}
+
+.categoria-card:hover .imagem-container img {
+    transform: scale(1.06);
 }
 
 .categoria-titulo {
@@ -296,14 +307,13 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    text-decoration: none; 
-    text-underline-offset: 5px;
+    color: #1a1a1a;
+    transition: letter-spacing 0.35s ease, color 0.35s ease;
 }
 
 .categoria-card:hover .categoria-titulo {
-    text-decoration: underline;
-    text-decoration-color: #000000;
-    text-decoration-thickness: 1.5px;
+    letter-spacing: 3px;
+    color: #c9a063;
 }
 
 .card-destaque {
@@ -493,6 +503,34 @@ h1 {
 }
 
 
+
+.header .logo-link {
+    display: flex;
+    align-items: baseline; 
+    justify-content: center;
+    gap: 8px; 
+    overflow: visible; 
+    padding-bottom: 10px;
+}
+
+
+.header .logo-link h1,
+.header .logo-link .parfums {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+.header .logo-link .key {
+    display: inline-block;
+    line-height: normal; 
+}
+
+.header .logo-link .parfums {
+    margin-left: 20px; 
+}
+
 @media (max-width: 480px) {
     h1 {
         font-size: 32px;
@@ -609,6 +647,46 @@ body.no-scroll {
 
 .btn-limpar-busca:hover {
     color: #666;
+}
+
+.marquee-notas {
+    background-color: #0D0B08;
+    overflow: hidden;
+    padding: 13px 0;
+    white-space: nowrap;
+    border-bottom: 1px solid rgba(201,160,99,0.25);
+}
+
+.marquee-trilho {
+    display: inline-flex;
+    gap: 48px;
+    animation: rolarMarquee 38s linear infinite;
+    width: max-content;
+}
+
+.marquee-trilho span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #cbb98a;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.marquee-trilho span i {
+    font-size: 6px;
+    color: #6B1E23;
+}
+
+@keyframes rolarMarquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-trilho { animation: none; }
 }
 
 .reveal {

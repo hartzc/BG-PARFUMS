@@ -122,4 +122,73 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.querySelector('.search-container input');
+    const searchContainer = document.querySelector('.search-container');
+
+    // 1. Cria o contêiner do dropdown de resultados
+    const dropdown = document.createElement('div');
+    dropdown.classList.add('busca-dropdown');
+    searchContainer.appendChild(dropdown);
+
+    let produtos = [];
+
+    // 2. Carrega os dados do arquivo produtos.json
+    // Certifique-se de que o JSON tenha formato: [{"nome": "Perfume X", "categoria": "Masculino", "link": "link.html"}]
+    fetch('produtos.json')
+        .then(response => response.json())
+        .then(data => {
+            produtos = data;
+        })
+        .catch(erro => console.error('Erro ao carregar o JSON de produtos:', erro));
+
+    // 3. Ouve a digitação no campo de busca
+    searchInput.addEventListener('input', (e) => {
+        const termoBusca = e.target.value.toLowerCase().trim();
+
+        if (termoBusca.length === 0) {
+            dropdown.classList.remove('visivel');
+            dropdown.innerHTML = '';
+            return;
+        }
+
+        // Filtra os produtos baseados no que foi digitado
+        const resultados = produtos.filter(produto => 
+            produto.nome.toLowerCase().includes(termoBusca) || 
+            produto.categoria.toLowerCase().includes(termoBusca)
+        );
+
+        renderizarResultados(resultados);
+    });
+
+    // 4. Monta os resultados na tela
+    function renderizarResultados(resultados) {
+        dropdown.innerHTML = ''; 
+
+        if (resultados.length === 0) {
+            dropdown.innerHTML = '<div class="busca-dropdown-vazio">Nenhum perfume encontrado.</div>';
+        } else {
+            resultados.forEach(produto => {
+                const item = document.createElement('a');
+                item.href = produto.link || '#'; 
+                item.classList.add('busca-dropdown-item');
+                
+                item.innerHTML = `
+                    <span class="busca-dropdown-nome">${produto.nome}</span>
+                    <span class="busca-dropdown-categoria">${produto.categoria}</span>
+                `;
+                dropdown.appendChild(item);
+            });
+        }
+
+        dropdown.classList.add('visivel');
+    }
+
+    // 5. Fecha o dropdown se clicar fora da barra de pesquisa
+    document.addEventListener('click', (e) => {
+        if (!searchContainer.contains(e.target)) {
+            dropdown.classList.remove('visivel');
+        }
+    });
+});
 });
